@@ -1,5 +1,9 @@
 # nodejs-opentutorials
 
+
+## Node.js-19.1.App 제작-Not found 구현
+https://youtu.be/pteR5pUpn2k
+
 사용자가 요청한 url을 parse
 > url.parse(request.url, true)
 
