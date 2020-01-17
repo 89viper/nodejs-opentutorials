@@ -1,8 +1,13 @@
 # nodejs-opentutorials
 
+## Node.js-19.2.App 제작-홈페이지 구현
+강의 출처 : https://youtu.be/krfmrBsWqzs
+pathname이 '/'이고,
+쿼리 id값이 없으면(undefined)
+타이틀과 설명에 해당하는 변수에 값을 넣어 홈페이지를 구현함(if문 추가 사용)
 
 ## Node.js-19.1.App 제작-Not found 구현
-https://youtu.be/pteR5pUpn2k
+강의 출처 : https://youtu.be/pteR5pUpn2k
 
 사용자가 요청한 url을 parse
 > url.parse(request.url, true)
