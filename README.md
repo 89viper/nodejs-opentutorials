@@ -4,9 +4,11 @@
 강의 출처 : https://youtu.be/ibz2gaW-tyQ
 
 fs.readdir 함수를 이용하여\
-특정 폴더에 있는 파일 목록을 배열로 가져옴\
+특정 폴더에 있는 파일 목록을 배열로 가져옴.
 > fs.readdir('./data', function (error, filelist) { ... }
-\
-파일 목록으로 파일을 읽고
-> 
-쿼리 id에 링크
+
+반복문과 파일 목록이 저장된 배열로 파일 개수만큼 내용을 출력
+> while (i < filelist.length) {
+  list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
+  i = i + 1;
+}
