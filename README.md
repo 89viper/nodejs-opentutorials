@@ -8,7 +8,7 @@ fs.readdir 함수를 이용하여\
 > fs.readdir('./data', function (error, filelist) { ... }
 
 반복문과 파일 목록이 저장된 배열로 파일 개수만큼 내용을 출력
-> while (i < filelist.length) {
-  list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;
-  i = i + 1;
-}
+> while (i < filelist.length) {\
+  list = list + `<li><a href="/?id=${filelist[i]}">${filelist[i]}</a></li>`;\
+  i = i + 1;\
+}\
