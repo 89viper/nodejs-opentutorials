@@ -1,20 +1,12 @@
 # nodejs-opentutorials
 
-## Node.js-19.2.App Á¦ÀÛ-È¨ÆäÀÌÁö ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/krfmrBsWqzs
+## Node.js-24.App ì œìž‘-ê¸€ëª©ë¡ ì¶œë ¥í•˜ê¸°
+ê°•ì˜ ì¶œì²˜ : https://youtu.be/ibz2gaW-tyQ
 
-pathnameÀÌ '/'ÀÌ°í,\
-Äõ¸® id°ªÀÌ ¾øÀ¸¸é(undefined)\
-Å¸ÀÌÆ²°ú ¼³¸í¿¡ ÇØ´çÇÏ´Â º¯¼ö¿¡ °ªÀ» ³Ö¾î È¨ÆäÀÌÁö¸¦ ±¸ÇöÇÔ(if¹® Ãß°¡ »ç¿ë)
-
-## Node.js-19.1.App Á¦ÀÛ-Not found ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/pteR5pUpn2k
-
-»ç¿ëÀÚ°¡ ¿äÃ»ÇÑ urlÀ» parse
-> url.parse(request.url, true)
-
-parseÇÑ url¿¡¼­ pathname¸¸ ÃßÃâ(Äõ¸®¹® ÀÌÈÄ ¹®ÀÚ´Â ¹«½Ã)
-> url.parse(request.url, true).pathname
-
-pathnameÀÌ '/'ÀÏ ¶§¸¸ ÆäÀÌÁö Ãâ·Â,
-'/'ÀÌ ¾Æ´Ò °æ¿ì 'Not found' ¸Þ½ÃÁö Ãâ·Â. (if¹® »ç¿ë)
+fs.readdir í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ì—¬\
+íŠ¹ì • í´ë”ì— ìžˆëŠ” íŒŒì¼ ëª©ë¡ì„ ë°°ì—´ë¡œ ê°€ì ¸ì˜´\
+> fs.readdir('./data', function (error, filelist) { ... }
+\
+íŒŒì¼ ëª©ë¡ìœ¼ë¡œ íŒŒì¼ì„ ì½ê³ 
+> 
+ì¿¼ë¦¬ idì— ë§í¬
