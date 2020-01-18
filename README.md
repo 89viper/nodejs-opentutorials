@@ -4,7 +4,7 @@
 강의 출처 : https://youtu.be/rm1rIN1DSfw
 
 메인 페이지에 글쓰기 폼을 연결할 링크 추가.
-> ``<a href="/create">create</a>
+> <a href="/create">create</a>
 
 위의 링크를 클릭했을 때 반환되는 pathname(/create)을 인식하면 처리할 else if문 추가.
 > else if (pathname === '/create') { ... }
