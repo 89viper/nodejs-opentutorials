@@ -1,20 +1,13 @@
 # nodejs-opentutorials
 
-## Node.js-19.2.App Á¦ÀÛ-È¨ÆäÀÌÁö ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/krfmrBsWqzs
+## Node.js-31.App ì œì‘-ê¸€ìƒì„± UI ë§Œë“¤ê¸°
+ê°•ì˜ ì¶œì²˜ : https://youtu.be/rm1rIN1DSfw
 
-pathnameÀÌ '/'ÀÌ°í,\
-Äõ¸® id°ªÀÌ ¾øÀ¸¸é(undefined)\
-Å¸ÀÌÆ²°ú ¼³¸í¿¡ ÇØ´çÇÏ´Â º¯¼ö¿¡ °ªÀ» ³Ö¾î È¨ÆäÀÌÁö¸¦ ±¸ÇöÇÔ(if¹® Ãß°¡ »ç¿ë)
+ë©”ì¸ í˜ì´ì§€ì— ê¸€ì“°ê¸° í¼ì„ ì—°ê²°í•  ë§í¬ ì¶”ê°€.
+> <a href="/create">create</a>
 
-## Node.js-19.1.App Á¦ÀÛ-Not found ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/pteR5pUpn2k
+ìœ„ì˜ ë§í¬ë¥¼ í´ë¦­í–ˆì„ ë•Œ ë°˜í™˜ë˜ëŠ” pathname(/create)ì„ ì¸ì‹í•˜ë©´ ì²˜ë¦¬í•  else ifë¬¸ ì¶”ê°€.
+> else if (pathname === '/create') { ... }
 
-»ç¿ëÀÚ°¡ ¿äÃ»ÇÑ urlÀ» parse
-> url.parse(request.url, true)
-
-parseÇÑ url¿¡¼­ pathname¸¸ ÃßÃâ(Äõ¸®¹® ÀÌÈÄ ¹®ÀÚ´Â ¹«½Ã)
-> url.parse(request.url, true).pathname
-
-pathnameÀÌ '/'ÀÏ ¶§¸¸ ÆäÀÌÁö Ãâ·Â,
-'/'ÀÌ ¾Æ´Ò °æ¿ì 'Not found' ¸Ş½ÃÁö Ãâ·Â. (if¹® »ç¿ë)
+ë³¸ë¬¸ ë‚´ìš©ì„ êµ¬ì„±í•˜ëŠ” í•¨ìˆ˜ì— ì´í„°ëŸ´ í˜•ì‹ì˜ HTML í¼ì„ íŒŒë¼ë¯¸í„°ë¡œ ëŒ€ì….
+> var template = templateHTML(title, list, ` ... HTML í¼ ...   `);
