@@ -10,5 +10,5 @@
 > else if (pathname === '/create_process') { ... }
 
 데이터가 들어오는 경우의 콜백함수와 데이터를 받는 것이 끝났을 때 각각의 경우에 호출할 콜백함수를 사용.
-> request.on('data', function (data) { ... } // 데이터가 들어올 때 호출하는 콜백함수
+> request.on('data', function (data) { ... } // 데이터가 들어올 때 호출하는 콜백함수\
 > request.on('end', function () { ... } // 데이터 받는 것이 끝났을 때 호출하는 콜백함수
