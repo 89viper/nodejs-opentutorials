@@ -1,14 +1,20 @@
 # nodejs-opentutorials
 
-## Node.js-32.App ì œì‘-POST ë°©ì‹ìœ¼ë¡œ ì „ì†¡ëœ ë°ì´í„° ë°›ê¸°
-ê°•ì˜ ì¶œì²˜ : https://youtu.be/WMX5zcalAM0
+## Node.js-19.2.App Á¦ÀÛ-È¨ÆäÀÌÁö ±¸Çö
+°­ÀÇ ÃâÃ³ : https://youtu.be/krfmrBsWqzs
 
-ì…ë ¥ í¼ ì¤‘ì—ì„œ, ì•„ë˜ì˜ íƒœê·¸ëŠ” ... ì˜ ë‚´ìš©ì„ /create_process ì´ë¼ëŠ” pathnameìœ¼ë¡œ ì „ë‹¬í•¨.
-> <form action="http://localhost:1337/create_process" method="post"> ... </form>
+pathnameÀÌ '/'ÀÌ°í,\
+Äõ¸® id°ªÀÌ ¾øÀ¸¸é(undefined)\
+Å¸ÀÌÆ²°ú ¼³¸í¿¡ ÇØ´çÇÏ´Â º¯¼ö¿¡ °ªÀ» ³Ö¾î È¨ÆäÀÌÁö¸¦ ±¸ÇöÇÔ(if¹® Ãß°¡ »ç¿ë)
 
-ë”°ë¼ì„œ /create_processê°€ ë“¤ì–´ì˜¤ëŠ” ê²½ìš°ì˜ else ifë¬¸ì„ ì¶”ê°€í•¨.
-> else if (pathname === '/create_process') { ... }
+## Node.js-19.1.App Á¦ÀÛ-Not found ±¸Çö
+°­ÀÇ ÃâÃ³ : https://youtu.be/pteR5pUpn2k
 
-ë°ì´í„°ê°€ ë“¤ì–´ì˜¤ëŠ” ê²½ìš°ì˜ ì½œë°±í•¨ìˆ˜ì™€ ë°ì´í„°ë¥¼ ë°›ëŠ” ê²ƒì´ ëë‚¬ì„ ë•Œ ê°ê°ì˜ ê²½ìš°ì— í˜¸ì¶œí•  ì½œë°±í•¨ìˆ˜ë¥¼ ì‚¬ìš©.
-> request.on('data', function (data) { ... } // ë°ì´í„°ê°€ ë“¤ì–´ì˜¬ ë•Œ í˜¸ì¶œí•˜ëŠ” ì½œë°±í•¨ìˆ˜\
-> request.on('end', function () { ... } // ë°ì´í„° ë°›ëŠ” ê²ƒì´ ëë‚¬ì„ ë•Œ í˜¸ì¶œí•˜ëŠ” ì½œë°±í•¨ìˆ˜
+»ç¿ëÀÚ°¡ ¿äÃ»ÇÑ urlÀ» parse
+> url.parse(request.url, true)
+
+parseÇÑ url¿¡¼­ pathname¸¸ ÃßÃâ(Äõ¸®¹® ÀÌÈÄ ¹®ÀÚ´Â ¹«½Ã)
+> url.parse(request.url, true).pathname
+
+pathnameÀÌ '/'ÀÏ ¶§¸¸ ÆäÀÌÁö Ãâ·Â,
+'/'ÀÌ ¾Æ´Ò °æ¿ì 'Not found' ¸Ş½ÃÁö Ãâ·Â. (if¹® »ç¿ë)
