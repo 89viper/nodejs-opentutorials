@@ -15,5 +15,5 @@ else if (pathname === '/create') { ... }
 
 본문 내용을 구성하는 함수에 이터럴 형식의 HTML 폼을 파라미터로 대입.
 ```
-var template = templateHTML(title, list, `` ... HTML 폼 ...   ``);
+var template = templateHTML(title, list, ` ... HTML 폼 ...   `);
 ```
