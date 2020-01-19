@@ -1,5 +1,23 @@
 # nodejs-opentutorials
 
+## Node.js-36.App 제작-파일명 변경, 내용 저장
+강의 출처 : https://youtu.be/Q6MQ5bi7HFY
+
+/update에서 form의 제출을 눌렀을 때 처리할 pathname의 else if문 추가
+```
+else if (pathname == '/update_process') { ... }
+```
+
+fs.rename으로 파일 이름을 변경한 뒤에 fs.writeFile로 내용을 변경함.
+```
+fs.rename(`data/${id}`, `data/${title}`, function (error) {              
+  fs.writeFile(`data/${title}`, description, 'utf8', function (err) {
+      response.writeHead(302, { Location: `/?id=${title}` });
+      response.end();
+  });
+});
+```
+
 ## Node.js-35.App 제작-글수정-수정할 정보 전송
 강의 출처 : https://youtu.be/kKbW16TZkYY
 
