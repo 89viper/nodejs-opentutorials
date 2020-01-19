@@ -19,13 +19,13 @@ app.listen(1337);
 강의 출처 : https://youtu.be/WwZIozqFti8
 
 다른 자바스크립트 파일을 만들고 이 파일 내의 객체를 가져와서 사용함.
-```
+``` javascript
 module.exports = {
     HTML: ... ,
     list: ...
 }
 ```
-```
+``` javascript
 var template = require('./lib/template.js');
 ```
 
@@ -33,7 +33,7 @@ var template = require('./lib/template.js');
 강의 출처 : https://youtu.be/WwZIozqFti8
 
 객체를 새로 선언하고 본문을 구성하는 함수와 파일들을 불러오는 함수를 객체 내의 키에 선언.
-```
+``` javascript
 var template = {
     HTML: function(title, list, body, control) { ... },
     list: function(filelist) { ... }
