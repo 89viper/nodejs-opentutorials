@@ -1,6 +1,6 @@
 # nodejs-opentutorials
 
-## Node.js-34.App 제작-글수정-수정할 정보 전송
+## Node.js-35.App 제작-글수정-수정할 정보 전송
 강의 출처 : https://youtu.be/kKbW16TZkYY
 
 pathname이 /update일 경우 처리할 else if문 작성.
