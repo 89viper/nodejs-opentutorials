@@ -1,5 +1,17 @@
 # nodejs-opentutorials
 
+
+## Node.js-45.App 제작-모듈의 활용
+강의 출처 : https://youtu.be/WwZIozqFti8
+
+다른 자바스크립트 파일을 만들고 이 파일 내의 객체를 가져와서 사용함.
+```
+module.exports = {
+    HTML: ... ,
+    list: ...
+}
+```
+
 ## Node.js-43.App 제작-템플릿 기능 정리정돈하기
 강의 출처 : https://youtu.be/WwZIozqFti8
 
