@@ -4,7 +4,8 @@
 강의 출처 : https://youtu.be/yn5VtLGbyAE
 
 삭제의 경우, 단순한 하이퍼링크 사용을 지양하고\
-form 형태에서 post 메소드를 이용한 전송을 하는 것이 권장됨.
+form 형태에서 post 메소드를 이용한 전송을 하는 것이 권장됨.\
+(크롤링같이 웹페이지를 탐색하는 경우 접근이 가능할 수 있기 때문)
 ```
 <form action="delete_process" method="post">
     <input type="hidden" name="id" value="${title}">
