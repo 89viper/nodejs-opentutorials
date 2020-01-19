@@ -11,6 +11,9 @@ module.exports = {
     list: ...
 }
 ```
+```
+var template = require('./lib/template.js');
+```
 
 ## Node.js-43.App 제작-템플릿 기능 정리정돈하기
 강의 출처 : https://youtu.be/WwZIozqFti8
