@@ -6,7 +6,9 @@
 수정을 위한 하이퍼링크 생성.\
 '/' 일 경우 : create버튼만 생성.\
 '/?id=${title}'일 경우 : create버튼과 update버튼.\
-'/create'일 경우 : 공백.\
+'/create'일 경우 : 공백.
 
 update버튼을 눌렀을 때, 해당 항목의 타이틀을 쿼리 id로 대입함.
-> <a href="/update?id=${title}">update</a>
+'''
+<a href="/update?id=${title}">update</a>
+'''
