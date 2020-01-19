@@ -1,37 +1,14 @@
 # nodejs-opentutorials
 
-888888888
+## Node.js-43.App 제작-템플릿 기능 정리정돈하기
+강의 출처 : https://youtu.be/WwZIozqFti8
 
-## Node.js-38.App 제작-글 삭제-글 삭제 기능 완성
-강의 출처 : https://youtu.be/RDj4Hns1Qnk
-
-delete 버튼을 눌렀을 때의 pathname을 처리할 else if문 작성.
+객체를 새로 선언하고 본문을 구성하는 함수와 파일들을 불러오는 함수를 객체 내의 키에 선언.
 ```
-else if (pathname == '/delete_process') { ... }
-```
-
-fs.unlink 함수를 사용하여 선택한 id에 해당하는 파일을 삭제.\
-파일 삭제 후 홈('/')으로 리디렉션.
-```
-request.on('end', function () {
-    var post = qs.parse(body);
-    var id = post.id;
-    fs.unlink(`data/${id}`, function (err) {
-        response.writeHead(302, { Location: `/` });
-        response.end();
-    });
-});
+var template = {
+    HTML: function(title, list, body, control) { ... },
+    list: function(filelist) { ... }
+}
 ```
 
-## Node.js-37.App 제작-글 삭제-삭제 버튼 구현
-강의 출처 : https://youtu.be/yn5VtLGbyAE
-
-삭제의 경우, 단순한 하이퍼링크 사용을 지양하고\
-form 형태에서 post 메소드를 이용한 전송을 하는 것이 권장됨.\
-(크롤링같이 웹페이지를 탐색하는 경우 접근이 가능할 수 있기 때문)
-```
-<form action="delete_process" method="post">
-    <input type="hidden" name="id" value="${title}">
-    <input type="submit" value="delete">
-</form>
-```
+리팩토링 : 외부동작을 바꾸지 않으면서 내부 구조를 개선하는 방법.
