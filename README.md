@@ -9,6 +9,6 @@
 '/create'일 경우 : 공백.
 
 update버튼을 눌렀을 때, 해당 항목의 타이틀을 쿼리 id로 대입함.
-'''
+```
 <a href="/update?id=${title}">update</a>
-'''
+```
