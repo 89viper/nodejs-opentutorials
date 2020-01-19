@@ -5,7 +5,7 @@
 fs 모듈과 querystring 모듈을 다른 자바스크립트 파일로 빼서 모듈로 사용함.
 
 본문을 아래와 같이 줄이고 pathname과 queryData의 id에 대한 if 분기는 다른 자바스크립트 파일에서 처리함.
-```
+``` javascript
 var app = http.createServer(function (request, response) {
     var queryData = url.parse(request.url, true).query;
     var pathname = url.parse(request.url, true).pathname;
