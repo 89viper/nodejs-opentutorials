@@ -142,13 +142,21 @@ var app = http.createServer(function (request, response) {
                 });
                 
             });
-            
-            /*
-            fs.writeFile(`data/${title}`, description, 'utf8', function (err) {
-                response.writeHead(302, { Location: `/?id=${title}` });
+        });
+
+    } else if (pathname == '/delete_process') {
+        var body = '';
+        request.on('data', function (data) {
+            body = body + data;
+            if (body.length > 1e6) request.connection.destory();
+        });
+        request.on('end', function () {
+            var post = qs.parse(body);
+            var id = post.id;
+            fs.unlink(`data/${id}`, function (err) {
+                response.writeHead(302, { Location: `/` });
                 response.end();
             });
-            */
         });
 
     } else {
