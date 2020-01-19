@@ -1,5 +1,7 @@
 # nodejs-opentutorials
 
+888888888
+
 ## Node.js-38.App 제작-글 삭제-글 삭제 기능 완성
 강의 출처 : https://youtu.be/RDj4Hns1Qnk
 
