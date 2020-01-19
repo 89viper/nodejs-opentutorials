@@ -1,20 +1,13 @@
 # nodejs-opentutorials
 
-## Node.js-19.2.App Á¦ÀÛ-È¨ÆäÀÌÁö ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/krfmrBsWqzs
+## Node.js-37.App ì œìž‘-ê¸€ ì‚­ì œ-ì‚­ì œ ë²„íŠ¼ êµ¬í˜„
+ê°•ì˜ ì¶œì²˜ : https://youtu.be/yn5VtLGbyAE
 
-pathnameÀÌ '/'ÀÌ°í,\
-Äõ¸® id°ªÀÌ ¾øÀ¸¸é(undefined)\
-Å¸ÀÌÆ²°ú ¼³¸í¿¡ ÇØ´çÇÏ´Â º¯¼ö¿¡ °ªÀ» ³Ö¾î È¨ÆäÀÌÁö¸¦ ±¸ÇöÇÔ(if¹® Ãß°¡ »ç¿ë)
-
-## Node.js-19.1.App Á¦ÀÛ-Not found ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/pteR5pUpn2k
-
-»ç¿ëÀÚ°¡ ¿äÃ»ÇÑ urlÀ» parse
-> url.parse(request.url, true)
-
-parseÇÑ url¿¡¼­ pathname¸¸ ÃßÃâ(Äõ¸®¹® ÀÌÈÄ ¹®ÀÚ´Â ¹«½Ã)
-> url.parse(request.url, true).pathname
-
-pathnameÀÌ '/'ÀÏ ¶§¸¸ ÆäÀÌÁö Ãâ·Â,
-'/'ÀÌ ¾Æ´Ò °æ¿ì 'Not found' ¸Þ½ÃÁö Ãâ·Â. (if¹® »ç¿ë)
+ì‚­ì œì˜ ê²½ìš°, ë‹¨ìˆœí•œ í•˜ì´í¼ë§í¬ ì‚¬ìš©ì„ ì§€ì–‘í•˜ê³ \
+form í˜•íƒœì—ì„œ post ë©”ì†Œë“œë¥¼ ì´ìš©í•œ ì „ì†¡ì„ í•˜ëŠ” ê²ƒì´ ê¶Œìž¥ë¨.\
+```
+<form action="delete_process" method="post" onsubmit=">
+    <input type="hidden" name="id" value="${title}">
+    <input type="submit" value="delete">
+</form>
+```
