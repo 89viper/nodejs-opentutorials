@@ -1,20 +1,12 @@
 # nodejs-opentutorials
 
-## Node.js-19.2.App Á¦ÀÛ-È¨ÆäÀÌÁö ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/krfmrBsWqzs
+## Node.js-34.App ì œì‘-ê¸€ìˆ˜ì •-ìˆ˜ì •ë§í¬ìƒì„±
+ê°•ì˜ ì¶œì²˜ : https://youtu.be/CSQfZz3UshE
 
-pathnameÀÌ '/'ÀÌ°í,\
-Äõ¸® id°ªÀÌ ¾øÀ¸¸é(undefined)\
-Å¸ÀÌÆ²°ú ¼³¸í¿¡ ÇØ´çÇÏ´Â º¯¼ö¿¡ °ªÀ» ³Ö¾î È¨ÆäÀÌÁö¸¦ ±¸ÇöÇÔ(if¹® Ãß°¡ »ç¿ë)
+ìˆ˜ì •ì„ ìœ„í•œ í•˜ì´í¼ë§í¬ ìƒì„±.\
+'/' ì¼ ê²½ìš° : createë²„íŠ¼ë§Œ ìƒì„±.\
+'/?id=${title}'ì¼ ê²½ìš° : createë²„íŠ¼ê³¼ updateë²„íŠ¼.\
+'/create'ì¼ ê²½ìš° : ê³µë°±.\
 
-## Node.js-19.1.App Á¦ÀÛ-Not found ±¸Çö
-°­ÀÇ ÃâÃ³ : https://youtu.be/pteR5pUpn2k
-
-»ç¿ëÀÚ°¡ ¿äÃ»ÇÑ urlÀ» parse
-> url.parse(request.url, true)
-
-parseÇÑ url¿¡¼­ pathname¸¸ ÃßÃâ(Äõ¸®¹® ÀÌÈÄ ¹®ÀÚ´Â ¹«½Ã)
-> url.parse(request.url, true).pathname
-
-pathnameÀÌ '/'ÀÏ ¶§¸¸ ÆäÀÌÁö Ãâ·Â,
-'/'ÀÌ ¾Æ´Ò °æ¿ì 'Not found' ¸Ş½ÃÁö Ãâ·Â. (if¹® »ç¿ë)
+updateë²„íŠ¼ì„ ëˆŒë €ì„ ë•Œ, í•´ë‹¹ í•­ëª©ì˜ íƒ€ì´í‹€ì„ ì¿¼ë¦¬ idë¡œ ëŒ€ì…í•¨.
+> <a href="/update?id=${title}">update</a>
