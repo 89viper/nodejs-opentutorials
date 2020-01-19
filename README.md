@@ -8,7 +8,8 @@ delete 버튼을 눌렀을 때의 pathname을 처리할 else if문 작성.
 else if (pathname == '/delete_process') { ... }
 ```
 
-fs.unlink 함수를 사용하여 선택한 id에 해당하는 파일을 삭제.
+fs.unlink 함수를 사용하여 선택한 id에 해당하는 파일을 삭제.\
+파일 삭제 후 홈('/')으로 리디렉션.
 ```
 request.on('end', function () {
     var post = qs.parse(body);
