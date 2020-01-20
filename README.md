@@ -1,43 +1,14 @@
 # nodejs-opentutorials
 
-## 추가 작업-모듈 분리
+## Node.js-46.App 제작-입력 정보에 대한 보안
+강의 출처 : https://youtu.be/xZztZWYuoo0
 
-fs 모듈과 querystring 모듈을 다른 자바스크립트 파일로 빼서 모듈로 사용함.
-
-본문을 아래와 같이 줄이고 pathname과 queryData의 id에 대한 if 분기는 다른 자바스크립트 파일에서 처리함.
+사용자가 쿼리를 입력하여 처리할 수 있는 부분에서는 ..을 이용한 상위 폴더 탐색을 주의해야 함.\
+아래와 같이 path 모듈의 파싱 기능을 이용하여 상위 폴더에 접근할 수 없도록 필터링을 해야 함.
 ``` javascript
-var app = http.createServer(function (request, response) {
-    var queryData = url.parse(request.url, true).query;
-    var pathname = url.parse(request.url, true).pathname;
+var path = require('path');
 
-    template.readfile(template, request, response, queryData, pathname);
-});
-app.listen(1337);
-```
-
-## Node.js-45.App 제작-모듈의 활용
-강의 출처 : https://youtu.be/WwZIozqFti8
-
-다른 자바스크립트 파일을 만들고 이 파일 내의 객체를 가져와서 사용함.
-``` javascript
-module.exports = {
-    HTML: ... ,
-    list: ...
+var filteredId = path.parse(queryData.id).base;
+    fs.readFile(`data/${filteredId}`, 'utf8', function (err, description) { ... }
 }
 ```
-``` javascript
-var template = require('./lib/template.js');
-```
-
-## Node.js-43.App 제작-템플릿 기능 정리정돈하기
-강의 출처 : https://youtu.be/WwZIozqFti8
-
-객체를 새로 선언하고 본문을 구성하는 함수와 파일들을 불러오는 함수를 객체 내의 키에 선언.
-``` javascript
-var template = {
-    HTML: function(title, list, body, control) { ... },
-    list: function(filelist) { ... }
-}
-```
-
-리팩토링 : 외부동작을 바꾸지 않으면서 내부 구조를 개선하는 방법.
