@@ -1,5 +1,17 @@
 # nodejs-opentutorials
 
+## Node.js-47.App 제작-출력 정보에 대한 보안
+강의 출처 : https://youtu.be/cY3Tvxr4LNE
+
+사용자가 스크립트를 입력한 뒤, 이 내용이 출력될 때 스크립트로 인한 오작동이 발생할 수 있음.\
+--> sanitize-HTML 모듈을 이용해서 태그 차단
+``` Javascript
+var sanitizeHtml = require('sanitize-html');
+
+var sanitizedTitle = sanitizeHtml(title);
+var sanitizedDescription = sanitizeHtml(description);
+```
+
 ## Node.js-46.App 제작-입력 정보에 대한 보안
 강의 출처 : https://youtu.be/xZztZWYuoo0
 
